@@ -27,3 +27,6 @@ ln -s deb ${DEB_NAME}
 # Create package
 dpkg-deb --build ${DEB_NAME}
 rm ${DEB_NAME}
+
+# copy deb file to my lxd container
+#sudo cp kafka_0.10.2.0_all.deb /var/lib/lxd/containers/kafka/rootfs/root/

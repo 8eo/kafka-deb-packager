@@ -1,4 +1,7 @@
 #!/bin/sh
 
+# Get the ownership right
+chown -R daemon.daemon /usr/share/kafka
+
 systemctl enable kafka.service || echo "kafka could not be registered"
 systemctl start kafka.service || echo "kafka could not be started"

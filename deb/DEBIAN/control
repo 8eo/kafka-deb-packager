@@ -1,6 +1,6 @@
 Source: Kafka
 Package: Kafka
-Version: 0.3.7
+Version: 0.10.2.0
 Section: java
 Priority: optional
 Architecture: all

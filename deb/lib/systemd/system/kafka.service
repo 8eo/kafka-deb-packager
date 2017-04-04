@@ -1,9 +1,9 @@
 [Unit]
 Description=Apache Kafka server (broker)
 Documentation=http://kafka.apache.org/documentation.html
-Requires=network-online.target
-After=network-online.target
-ConditionPathExists=/etc/kafka/server.properties
+Requires=network-online.target remote-fs.target
+After=network-online.target remote-fs.target
+ConditionPathExists=/usr/share/kafka/config/server.properties
 ConditionPathExists=/usr/share/kafka/bin
 
 [Service]
