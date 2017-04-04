@@ -1,10 +1,10 @@
 [Unit]
 Description=Apache Kafka server (broker)
 Documentation=http://kafka.apache.org/documentation.html
-Requires=network.target remote-fs.target syslog.target
-After=network.target remote-fs.target syslog.target
+Requires=network-online.target
+After=network-online.target
 ConditionPathExists=/etc/kafka/server.properties
-ConditionPathExists=/var/lib/kafka
+ConditionPathExists=/usr/share/kafka/bin
 
 [Service]
 Type=simple
@@ -13,7 +13,7 @@ User=daemon
 Group=daemon
 WorkingDirectory=/var/lib/kafka
 EnvironmentFile=/etc/sysconfig/kafka
-ExecStart=/usr/share/kafka/bin/kafka-server-start.sh /etc/kafka/server.properties
+ExecStart=/usr/share/kafka/bin/kafka-server-start.sh /usr/share/kafka/config/server.properties
 ExecStop=/usr/share/kafka/bin/kafka-server-stop.sh
 Restart=on-failure
 SyslogIdentifier=kafka

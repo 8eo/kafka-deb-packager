@@ -7,7 +7,7 @@ TARBALL="kafka_${SCALA_VERSION}-${KAFKA_VERSION}.tgz"
 DEB_NAME="kafka_${KAFKA_VERSION}_all"
 
 # Grab the tarball if we don't already have it
-[ ! -f ${TARBALL} ] && wget "${URL}/${KAFKA_VERSION}/${TARBALL}"
+[ ! -f ${TARBALL} ] && wget -nv "${URL}/${KAFKA_VERSION}/${TARBALL}"
 
 # Untar this in a clean /usr/share/kafka directory
 [ ! -f deb/usr/share/kafka ] && mkdir -p deb/usr/share/kafka
@@ -15,9 +15,9 @@ rm -rf deb/usr/share/kafka/*
 tar xf ${TARBALL} --strip-components=1 -C deb/usr/share/kafka
 
 # I like config files in /etc so lets move them there
-rm -f deb/etc/kafka/*
-mv deb/usr/share/kafka/config/* deb/etc/kafka/
-rm -rf deb/usr/share/kafka/config
+# rm -f deb/etc/kafka/*
+# mv deb/usr/share/kafka/config/* deb/etc/kafka/
+# rm -rf deb/usr/share/kafka/config
 
 # Clean up stuff we don't need i the distro
 rm -rf deb/usr/share/kafka/bin/windows
