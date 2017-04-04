@@ -1,0 +1,8 @@
+Source: Kafka
+Package: Kafka
+Version: 0.3.7
+Section: java
+Priority: optional
+Architecture: all
+Maintainer: David Weber <dave@horn.co>
+Description: Kafka data pipeline

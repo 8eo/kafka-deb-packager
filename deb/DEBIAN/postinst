@@ -1,0 +1,4 @@
+#!/bin/sh
+
+systemctl enable kafka.service || echo "kafka could not be registered"
+systemctl start kafka.service || echo "kafka could not be started"

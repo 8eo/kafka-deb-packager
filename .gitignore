@@ -1,0 +1,4 @@
+*.tgz
+deb/usr
+deb/etc
+*.deb
