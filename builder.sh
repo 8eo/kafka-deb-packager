@@ -24,6 +24,8 @@ rm -rf deb/usr/share/kafka/bin/windows
 rm -rf deb/usr/share/kafka/site-docs
 ln -s deb ${DEB_NAME}
 
+# Inject the version into the deb control file
+cat control  | sed "s/^Version:.*/Version: ${KAFKA_VERSION}/" > deb/DEBIAN/control
 # Create package
 dpkg-deb --build ${DEB_NAME}
 rm ${DEB_NAME}
