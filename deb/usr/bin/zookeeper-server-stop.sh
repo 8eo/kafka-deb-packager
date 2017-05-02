@@ -1,1 +1,0 @@
-../share/kafka/bin/zookeeper-server-stop.sh

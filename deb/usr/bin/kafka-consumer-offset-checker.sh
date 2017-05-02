@@ -1,1 +1,0 @@
-../share/kafka/bin/kafka-consumer-offset-checker.sh

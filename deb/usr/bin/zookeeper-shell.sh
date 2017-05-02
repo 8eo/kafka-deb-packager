@@ -1,1 +1,0 @@
-../share/kafka/bin/zookeeper-shell.sh

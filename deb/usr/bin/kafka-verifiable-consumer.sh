@@ -1,1 +1,0 @@
-../share/kafka/bin/kafka-verifiable-consumer.sh

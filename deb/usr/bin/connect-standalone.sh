@@ -1,1 +1,0 @@
-../share/kafka/bin/connect-standalone.sh
