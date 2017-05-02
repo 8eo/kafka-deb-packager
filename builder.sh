@@ -27,3 +27,4 @@ cat control  | sed "s/^Version:.*/Version: ${DEB_VERSION}/" > deb/DEBIAN/control
 # Create package
 dpkg-deb --build ${DEB_NAME}
 rm ${DEB_NAME}
+rm deb/DEBIAN/control
