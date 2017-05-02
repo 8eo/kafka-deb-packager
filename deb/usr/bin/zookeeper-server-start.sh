@@ -1,0 +1,1 @@
+../share/kafka/bin/zookeeper-server-start.sh

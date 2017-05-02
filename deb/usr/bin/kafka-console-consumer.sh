@@ -1,0 +1,1 @@
+../share/kafka/bin/kafka-console-consumer.sh

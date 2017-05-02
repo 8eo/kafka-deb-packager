@@ -1,0 +1,1 @@
+../share/kafka/bin/kafka-topics.sh

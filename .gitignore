@@ -1,4 +1,4 @@
 *.tgz
-deb/usr
+deb/usr/share
 deb/DEBIAN/control
 *.deb

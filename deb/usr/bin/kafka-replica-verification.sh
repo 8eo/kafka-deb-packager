@@ -1,0 +1,1 @@
+../share/kafka/bin/kafka-replica-verification.sh
