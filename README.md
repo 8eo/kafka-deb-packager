@@ -11,7 +11,7 @@ It places the package in the following directories:
 
 Build the scripts using:
 ```bash
-./builder.#!/bin/sh
+./builder
 ```
 
 If you want to change the version of Kafka, the following variables are at
