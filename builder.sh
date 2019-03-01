@@ -1,7 +1,7 @@
 #!/bin/bash
 
 MINOR_VER="1"
-KAFKA_VERSION="1.0.0"
+KAFKA_VERSION="2.1.1"
 DEB_VERSION="${KAFKA_VERSION}-${MINOR_VER}"
 SCALA_VERSION="2.12"
 URL="http://apache.mirrors.tds.net/kafka"
